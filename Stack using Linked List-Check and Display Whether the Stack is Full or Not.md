@@ -1,4 +1,52 @@
-# # 📚 Stack using Linked List: Check and Display Whether the Stack is Full or Not
+**# 🔁 Queue using Linked List: Display Front and Rear Elements of a Queue
+
+## 🎯 Aim
+
+To write a Python program to:
+- Insert elements into a queue.
+- Display the element at the **front** of the queue.
+- Display the element at the **rear** of the queue.
+
+---
+
+## 🧠 Algorithm
+
+1. **Initialize Queue**:
+   - Create an empty list called `queue`.
+
+2. **Insert Elements**:
+   - Use the `append()` method to add `'a'`, `'b'`, `'c'`, and `'d'` to the queue.
+
+3. **Display Initial Queue**:
+   - Print `"Initial Queue:"` followed by the current state of the queue.
+
+4. **Identify Front and Rear**:
+   - Set `front = queue[0]` for the front element.
+   - Set `rear = queue[-1]` for the rear element.
+
+5. **Print Results**:
+   - Display the front and rear elements with appropriate messages.
+
+---
+## Program
+      queue = []
+      queue.append('a')
+      queue.append('b')
+      queue.append('c')
+      queue.append('d')
+      print('Initial Queue: ' ,queue)
+      front=queue[0]
+      rear=queue[-1]
+      print("\nElement at the front of the queue is.... ", front)
+      print("\nElement at the rear of the queue is ....", rear)
+
+
+## Output
+![image](https://github.com/user-attachments/assets/e2eb10bd-b8b3-4250-8bb1-c5b7b05a1d6d)
+
+
+## Result
+Thus, the program has been execueted successfully.**# # 📚 Stack using Linked List: Check and Display Whether the Stack is Full or Not
 
 This Python program demonstrates how to check if a stack (using `LifoQueue` from the `queue` module) is full or not. It uses the `full()` method to determine the stack's status and then displays the appropriate message.
 
@@ -29,8 +77,19 @@ To write a Python program that:
    - Otherwise, print "Stack is not full".
 
 ## 📝 Program
-Add Code here
+      from queue import LifoQueue
+      stack = LifoQueue(maxsize=4)
+      stack.put('a')
+      stack.put('b')
+      stack.put('c')
+      ifstack.full():
+      print("Stack isfull")
+      else:
+      print("Stack is not full")
 
 ## Sample Input & Output
+![image](https://github.com/user-attachments/assets/effe7fca-dcc7-4cf3-a919-6f10d10fed6f)
+
 
 ## Result
+Thus, the program has been execueted successfully.
